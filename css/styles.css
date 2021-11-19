@@ -118,8 +118,8 @@ header {
   letter-spacing: 0.02em;
   color: var(--second-text-color);
 
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: flex;
   align-items: center;
 }
@@ -131,8 +131,8 @@ header {
   letter-spacing: 0.02em;
   color: var(--second-text-color);
 
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: flex;
   align-items: center;
 }
@@ -393,25 +393,44 @@ header {
 
   margin-top: 0px;
   margin-bottom: 0px;
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 .social-list {
-  padding-left: 0px;
+  justify-content: center;
   display: flex;
-}
-
-.social-item {
-  background: red;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  margin-right: 10px;
+  padding-left: 0px;
 }
 
 .social-link {
+  /* outline: 1px solid tomato; */
   width: 44px;
   height: 44px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #afb1b8;
+  background-color: var(--bgc-main-color);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link:hover {
+  color: #ffffff;
+}
+
+.social-link:hover {
+  background-color: var(--accent-color);
+}
+
+.social-link {
+  fill: currentColor;
 }
 
 .clients {
@@ -529,6 +548,8 @@ header {
 
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-item:nth-child(3n) {
@@ -649,4 +670,61 @@ header {
 .adress-link-tel:hover,
 .adress-link-tel:focus {
   color: var(--accent-color);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.social-box {
+  margin-left: 70px;
+}
+
+.social-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+  margin-bottom: 20px;
+}
+
+.box-list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  display: flex;
+  margin-right: 10px;
+}
+
+.box-link {
+  width: 44px;
+  height: 44px;
+  /* outline: 1px solid red; */
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  background-position: center;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.box-link:hover {
+  background-color: var(--accent-color);
+}
+
+.box-svg {
+  fill: #ffffff;
+}
+
+.footer-box {
+  display: flex;
+  align-items: center;
 }
