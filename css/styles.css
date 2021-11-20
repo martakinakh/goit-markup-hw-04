@@ -549,9 +549,8 @@ header {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-
+  background-color: #ffffff;
   border: 1px solid #eeeeee;
-  box-sizing: border-box;
 }
 
 .gallery-item:nth-child(3n) {
@@ -699,7 +698,8 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--third-text-color);
-  /* margin-bottom: 20px; */
+  margin-top: 0px;
+  margin-bottom: 20px;
 }
 
 .box-list {
@@ -707,7 +707,6 @@ header {
   margin-bottom: 0px;
   padding-left: 0px;
   display: flex;
-  margin-right: 10px;
 }
 
 .box-link {
